@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Globe 环球咖喱</title>
+    <link rel="stylesheet" href="About.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="left-side">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Recipe.html">Recipe</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section class="about-section">
+            <p class = "aboutus">About Us</p>
+            <p class = "story1">
+                Welcome to The Globe 环球咖喱, where we bring together diverse flavors and culinary traditions 
+                from around the world. Our mission is to create a fusion of dishes that combines East Asian, 
+                South Asian, and Western influences, crafting unforgettable flavors for our guests.
+            </p>
+
+            <button class="commentus-button" onclick="showCommentForm()">COMMENT US</button> 
+
+            <div id="comment-form-container" class="hidden">
+                <form id="comment-form" class="comment-form">
+                    <h2>Rate & Comment</h2>
+                    
+                    <label for="dish">Choose a Dish:</label>
+                    <select id="dish" name="dish">
+                        <option value="Indian Tik-Tak Curry">Indian Tik-Tak Curry</option>
+                        <option value="Thai Milk Tea">Thai Milk Tea</option>
+                        <option value="Afghan Korma Curry">Afghan Korma Curry</option>
+                        <option value="The Globe Special Coffee">The Globe Special Coffee</option>
+                        <option value="Mango Coconut Curry">Mango Coconut Curry</option>
+                        <option value="Mango Lassi">Mango Lassi</option>
+                    </select>
+            
+                    <label for="rating">Rating (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+            
+                    <label for="comment">Your Comment:</label>
+                    <textarea id="comment" name="comment" rows="5" required></textarea>
+                    
+                    <button type="submit" class="form-submit-button">Submit</button>
+                    <button type="button" class="form-cancel-button" onclick="hideCommentForm()">Cancel</button>
+                </form>
+            </div>
+        </section>
+        
+    </div>
+
+    <div class="image-container">
+        <a href="index.html" target="_blank">
+            <img src="logo1.png" alt="The Globe LOGO" class="sixth-image">
+        </a>
+    </div>  
+
+    <div class="image-container">
+        <a href="#instagram" target="_blank">
+            <img src="ins1.png" alt="Instagram logo" class="third-image">
+        </a>
+    </div>  
+    
+    <div class="image-container">
+        <a href="#facebook1" target="_blank">
+            <img src="facebook1.png" alt="Facebook logo" class="fourth-image">
+        </a>
+    </div>     
+    
+    <div class="image-container">
+        <a href="#wechat1" target="_blank">
+            <img src="wechat1.png" alt="Wechat logo" class="fifth-image">
+        </a>
+    </div>  
+
+    <div class="right-side">
+        <div class="image-container">
+            <img src="food4.jpg" alt="Indian Tik-Tak Curry and Afghan Korma Curry" class="ninth-image">
+        </div>        
+    </div>
+    
+</body>
+</html>
