@@ -143,9 +143,9 @@ nav a:hover {
     text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.2s ease;
     border-radius: 30px;
-    position: relative;
-    top: 500px;
-    left: -500px;
+    position: absolute;
+    top: 560px;
+    left: 92px;
 }
 
 .contact-button:hover {
